@@ -10,8 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- font awesome cdn -->
     <script src="https://kit.fontawesome.com/42e4b1a3be.js" crossorigin="anonymous"></script>
-    <!-- tailwind cdn -->
+    <!-- daisy ui and tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+   
+    
     <script>
         tailwind.config = {
           theme: {
@@ -25,6 +28,43 @@
       </script>
 </head>
 <body>
-    
+    <header class=" mx-auto px-5 lg:px-32 bg-white">
+      <nav>
+        <div class="navbar bg-white -100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu text-xs text-black menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52">
+                  <li><a>Home</a></li> 
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+              <i class="fa-solid fa-arrow-right -rotate-45 bg-green-400 p-2 rounded-full p-2 rounded-full   "></i>
+              <a class="btn btn-ghost text-2xl text-black">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu text-xs text-black menu-horizontal px-1">
+               
+                <li class="text-black-500"><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact Us</a></li>    
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <i class="fa-solid fa-magnifying-glass mr-4 p-2 rounded-full bg-yellow-100 invisible lg:visible"></i>
+              <i class="fa-solid fa-cart-shopping mr-4 p-2 rounded-full bg-yellow-100 p-2 rounded-full invisible lg:visible"></i>
+             <img src="Images/magnifier_icon-icons.com_53660.png" class="h-12 invisible lg:visible " alt="">
+              <a class="btn btn-error bg-green-500  text-sm text-black border-none invisible lg:visible ">Book Consult <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-2 rounded-full "></i></a>
+            </div>
+          </div>
+    </nav>
+    </header>
 </body>
 </html>
